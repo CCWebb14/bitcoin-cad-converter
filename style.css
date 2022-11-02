@@ -1,0 +1,73 @@
+html {
+    background-color: #1F2937;
+    background-size: cover;
+  }
+  
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4em;
+    margin: 0 10vw;
+  }
+  
+  .result-field {
+    display: flex;
+    color: #f9faf8;
+    height: 75px;
+    flex-basis: 100%;
+    font-size: calc(1.5em + 1vmin);
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .entry-bar {
+    display: flex;
+    flex: auto;
+    height: 75px;
+    padding: 0 5vw;
+    background: linear-gradient(145deg, #1A232F, #242F3F);
+    border-radius: 1em;
+    box-shadow: 9.91px 9.91px 15px #1C2532, -9.91px -9.91px 15px #222D3C;
+    max-width: 750px;
+  }
+  
+  #entry-bar-content{
+    flex: auto;
+    font-size: calc(0.75em + 1vmin);
+    color: white;
+    outline-width: 0;
+    background: transparent;
+    border: none;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  
+  .entry-bar-content-animation {
+    animation: blinker 2s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 25%;
+    }
+  }
